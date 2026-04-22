@@ -1,18 +1,15 @@
 {
-  "name": "skillbridge-arabia-landing",
+  "name": "skillbridge-arabia-demo",
   "version": "1.0.0",
-  "description": "SkillBridge Arabia — Investor Landing Page",
+  "description": "SkillBridge Arabia Demo Platform",
   "main": "server.js",
   "scripts": {
     "build": "echo \"No build step required\"",
-    "start": "node server.js",
-    "dev": "node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.18.2"
   },
-  "engines": {
-    "node": ">=18.0.0"
-  },
+  "engines": { "node": ">=18.0.0" },
   "license": "UNLICENSED"
 }
