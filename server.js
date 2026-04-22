@@ -4,7 +4,7 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(express.static(__dirname ));
+app.use(express.static(path.join(__dirname, ));
 
 // Password check endpoint
 app.post('/api/auth', (req, res) => {
@@ -18,7 +18,7 @@ app.post('/api/auth', (req, res) => {
 });
 
 app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname,  'index.html'));
 });
 
 app.listen(port, () => {
