@@ -6,7 +6,7 @@ const app  = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.json());
-app.use(__dirname);
+app.use(express.static(__dirname));
 
 // ── POST /api/demo  →  Google Sheets via Apps Script ──
 app.post('/api/demo', (req, res) => {
@@ -63,7 +63,7 @@ app.post('/api/demo', (req, res) => {
 
 // ── Serve index.html ──
 app.get('*', (req, res) => {
-  res.sendFile((__dirname, 'index.html'));
+  res.sendFile(path.json (__dirname, 'index.html'));
 });
 
 app.listen(port, () => {
